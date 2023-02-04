@@ -11,19 +11,18 @@ public class MvnSearchTest {
     @Test
     public void jUnitIleIlkSayfaAcilisi() throws InterruptedException {
 
-            WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
 
-            driver.get("https://www.mvnrepository.com");
-            Thread.sleep(2000);
-            WebElement searchBox = driver.findElement(By.xpath("//input[@class='textfield']"));
-            searchBox.sendKeys("selenium");
-            WebElement searchButton = driver.findElement(By.xpath("//input[@class='button']"));
-            searchButton.click();
+        driver.get("https://google.com/");
+        Thread.sleep(3000);
 
+        WebElement searchBox = driver.findElement(By.xpath("//input[@class='textfield']"));
+        searchBox.sendKeys("Selenium");
+        Thread.sleep(3000);
 
-        }
+        WebElement searchButton = driver.findElement(By.xpath("//input[@class='button']"));
+        searchButton.click();
+        Thread.sleep(3000);
     }
 
-
-
-
+}
